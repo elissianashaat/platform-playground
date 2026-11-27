@@ -1,0 +1,9 @@
+extends: default
+rules:
+  document-start: disable          # Kubernetes manifests rarely start with ---
+  line-length:
+    max: 140
+  truthy:
+    allowed-values: ["true", "false", "on"]   # "on:" is the GitHub Actions trigger key
+  comments:
+    min-spaces-from-content: 1
